@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Pineapple team
+      </h1>
+
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Tasks</h2>
+      <p class="govuk-body govuk-!-margin-bottom-7">You have completed 0 of 7 sections.</p>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Write requirements
+          </h2>
+          <p>Before you can publish your requirements, you must complete:</p>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-status">
+                  Title
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                  Location
+              </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Description of work
+              </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">Not started</strong>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Set how you’ll evaluate suppliers
+          </h2>
+          <p>Before you can publish your requirements, you must complete:</p>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Shortlist and evaluation process
+              </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">Not started</strong>
+            </li>
+            </ul>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span> Publish requirements
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Describe question and answer session
+              </span>
+              <strong class="govuk-tag app-task-list__tag" id="eligibility-status">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Preview your requirements
+              </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">Not started</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                Publish your requirements
+              </span>
+              <strong class="govuk-tag govuk-tag--blue app-task-list__tag" id="contact-details-status">Not started</strong>
+            </li>
+            </ul>
+
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">4. </span> Answer supplier questions
+              </h2>
+              <p>When you’ve published your requirements, you must answer all supplier questions.</p>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                   <a href="#">How to answer supplier questions</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Guidance</strong>
+                </li>
+            </ul>
+
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">5. </span> Shortlist
+                <p>After the application deadline, shortlist the suppliers who applied.</p>
+              </h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                   <a href="#">How to shortlist suppliers</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Guidance</strong>
+                </li>
+            </ul>
+
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">6. </span> Evaluate
+                <p>Evaluate your shortlist using the criteria and methods you published with your requirements.</p>
+              </h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                   <a href="#">How to evaluate suppliers</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Guidance</strong>
+                </li>
+            </ul>
+
+            <li>
+              <h2 class="app-task-list__section">
+                <span class="app-task-list__section-number">7. </span> Award a contract
+                <p>You must give your chosen supplier a contract before they start work.</p>
+              </h2>
+              <ul class="app-task-list__items">
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                   <a href="#">How to award a contract</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Guidance</strong>
+                </li>
+                <li class="app-task-list__item">
+                  <span class="app-task-list__task-name">
+                   <a href="#">Download the Digital Outcomes and Specialists 4 contract</a>
+                  </span>
+                  <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="contact-details-status">Guidance</strong>
+                </li>
+            </ul>
+      </ol>
+    </div>
+  </div>
+
+{% endblock %}
